@@ -285,11 +285,11 @@
     </div>
   </section>
 
-  <!-- TARIFAS CON INTERRUPTOR INTERACTIVO MENSUAL / ANUAL -->
+  <!-- TARIFAS CON INTERRUPTOR INTERACTIVO MENSUAL / ANUAL (PRECIOS FINALES YA CON IVA) -->
   <section id="tarifas" class="relative z-10 max-w-5xl mx-auto px-6 py-20 border-t border-white/10 space-y-10">
     <div class="flex flex-col md:flex-row md:items-center justify-between gap-6">
       <div class="space-y-2">
-        <p class="text-xs font-bold uppercase tracking-widest text-emerald-400">Tarifas Transparentes (MXN + IVA)</p>
+        <p class="text-xs font-bold uppercase tracking-widest text-emerald-400">Tarifas Finales en MXN (Ya con IVA)</p>
         <h2 class="text-3xl font-extrabold text-white tracking-tight">Crece según el tamaño de tu equipo</h2>
       </div>
 
@@ -313,8 +313,8 @@
           <span class="text-xs font-bold uppercase tracking-wider text-slate-400">Equipo Inicial</span>
           <h3 class="text-xl font-extrabold text-white">Hasta 10 colaboradores</h3>
           <div>
-            <p id="precio10" class="text-4xl font-extrabold text-white">$450 <span class="text-xs font-normal text-slate-400">MXN/mes + IVA</span></p>
-            <p id="sub10" class="text-xs text-emerald-400 mt-1">O $4,860 MXN + IVA al año (10% dcto.)</p>
+            <p id="precio10" class="text-4xl font-extrabold text-white">$450 <span class="text-xs font-normal text-slate-400">MXN/mes (ya con IVA)</span></p>
+            <p id="sub10" class="text-xs text-emerald-400 mt-1">O $4,860 MXN al año ya con IVA (10% dcto.)</p>
           </div>
           <p class="text-xs text-slate-400 leading-relaxed">Sistema completo con huella digital, dispositivo único, GPS y exportación a Excel/CSV.</p>
         </div>
@@ -332,8 +332,8 @@
           </div>
           <h3 class="text-xl font-extrabold text-white">De 11 a 20 colaboradores</h3>
           <div>
-            <p id="precio20" class="text-4xl font-extrabold text-white">$550 <span class="text-xs font-normal text-slate-400">MXN/mes + IVA</span></p>
-            <p id="sub20" class="text-xs text-emerald-400 mt-1">O $5,940 MXN + IVA al año (10% dcto.)</p>
+            <p id="precio20" class="text-4xl font-extrabold text-white">$550 <span class="text-xs font-normal text-slate-400">MXN/mes (ya con IVA)</span></p>
+            <p id="sub20" class="text-xs text-emerald-400 mt-1">O $5,940 MXN al año ya con IVA (10% dcto.)</p>
           </div>
           <p class="text-xs text-slate-300 leading-relaxed">Ideal para sucursales, cuadrillas o equipos con turnos rotativos y control de incidencias.</p>
         </div>
@@ -348,8 +348,8 @@
           <span class="text-xs font-bold uppercase tracking-wider text-sky-400">Operación Ampliada</span>
           <h3 class="text-xl font-extrabold text-white">De 21 a 30 colaboradores</h3>
           <div>
-            <p id="precio30" class="text-4xl font-extrabold text-white">$650 <span class="text-xs font-normal text-slate-400">MXN/mes + IVA</span></p>
-            <p id="sub30" class="text-xs text-emerald-400 mt-1">O $7,020 MXN + IVA al año (10% dcto.)</p>
+            <p id="precio30" class="text-4xl font-extrabold text-white">$650 <span class="text-xs font-normal text-slate-400">MXN/mes (ya con IVA)</span></p>
+            <p id="sub30" class="text-xs text-emerald-400 mt-1">O $7,020 MXN al año ya con IVA (10% dcto.)</p>
           </div>
           <p class="text-xs text-slate-400 leading-relaxed">Para plantillas de hasta 30 personas. ¿Más de 30? Armamos cotización a medida.</p>
         </div>
@@ -486,28 +486,28 @@
       pasoDemo++;
     }
 
-    // Selector Mensual / Anual
+    // Selector Mensual / Anual (Precios finales ya con IVA)
     function cambiarCiclo(ciclo) {
       const btnM = document.getElementById('btnMensual');
       const btnA = document.getElementById('btnAnual');
       if (ciclo === 'anual') {
         btnA.className = 'px-4 py-2 rounded-xl text-xs font-bold transition bg-emerald-500 text-slate-950 flex items-center gap-1.5 cursor-pointer';
         btnM.className = 'px-4 py-2 rounded-xl text-xs font-bold transition text-slate-300 hover:text-white cursor-pointer';
-        document.getElementById('precio10').innerHTML = '$4,860 <span class="text-xs font-normal text-slate-400">MXN/año + IVA</span>';
+        document.getElementById('precio10').innerHTML = '$4,860 <span class="text-xs font-normal text-slate-400">MXN/año (ya con IVA)</span>';
         document.getElementById('sub10').textContent = 'Ahorras $540 MXN al año (equivale a $405/mes)';
-        document.getElementById('precio20').innerHTML = '$5,940 <span class="text-xs font-normal text-slate-400">MXN/año + IVA</span>';
+        document.getElementById('precio20').innerHTML = '$5,940 <span class="text-xs font-normal text-slate-400">MXN/año (ya con IVA)</span>';
         document.getElementById('sub20').textContent = 'Ahorras $660 MXN al año (equivale a $495/mes)';
-        document.getElementById('precio30').innerHTML = '$7,020 <span class="text-xs font-normal text-slate-400">MXN/año + IVA</span>';
+        document.getElementById('precio30').innerHTML = '$7,020 <span class="text-xs font-normal text-slate-400">MXN/año (ya con IVA)</span>';
         document.getElementById('sub30').textContent = 'Ahorras $780 MXN al año (equivale a $585/mes)';
       } else {
         btnM.className = 'px-4 py-2 rounded-xl text-xs font-bold transition bg-white text-slate-950 cursor-pointer';
         btnA.className = 'px-4 py-2 rounded-xl text-xs font-bold transition text-slate-300 hover:text-white flex items-center gap-1.5 cursor-pointer';
-        document.getElementById('precio10').innerHTML = '$450 <span class="text-xs font-normal text-slate-400">MXN/mes + IVA</span>';
-        document.getElementById('sub10').textContent = 'O $4,860 MXN + IVA al año (10% dcto.)';
-        document.getElementById('precio20').innerHTML = '$550 <span class="text-xs font-normal text-slate-400">MXN/mes + IVA</span>';
-        document.getElementById('sub20').textContent = 'O $5,940 MXN + IVA al año (10% dcto.)';
-        document.getElementById('precio30').innerHTML = '$650 <span class="text-xs font-normal text-slate-400">MXN/mes + IVA</span>';
-        document.getElementById('sub30').textContent = 'O $7,020 MXN + IVA al año (10% dcto.)';
+        document.getElementById('precio10').innerHTML = '$450 <span class="text-xs font-normal text-slate-400">MXN/mes (ya con IVA)</span>';
+        document.getElementById('sub10').textContent = 'O $4,860 MXN al año ya con IVA (10% dcto.)';
+        document.getElementById('precio20').innerHTML = '$550 <span class="text-xs font-normal text-slate-400">MXN/mes (ya con IVA)</span>';
+        document.getElementById('sub20').textContent = 'O $5,940 MXN al año ya con IVA (10% dcto.)';
+        document.getElementById('precio30').innerHTML = '$650 <span class="text-xs font-normal text-slate-400">MXN/mes (ya con IVA)</span>';
+        document.getElementById('sub30').textContent = 'O $7,020 MXN al año ya con IVA (10% dcto.)';
       }
     }
 
